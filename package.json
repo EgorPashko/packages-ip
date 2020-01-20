@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "packages-ip",
+  "version": "0.0.1",
+  "main": "lib/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,10 +19,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lib": "babel src/node_modules --out-dir lib --copy-files",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   },
   "browserslist": {
     "production": [
